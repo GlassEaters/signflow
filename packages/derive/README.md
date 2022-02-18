@@ -19,7 +19,7 @@ As long as the signed message stays the same, the new Secret Key will be the sam
 const MESSAGE = "Your Application/Function Specific Seed";
 
 const newKeypair: Keypair = deriveKeypair(MESSAGE, wallet.adapter, {
-    separateDomain: this, // Adds a domain/origin namespace to the message.
+    separateDomain: true, // Adds a domain/origin namespace to the message.
 });
 ```
 
