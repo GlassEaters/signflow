@@ -19,5 +19,5 @@
     "incremental": false,
     "resolveJsonModule": true
   },
-  "include": ["src", "test"]
+  "include": ["."]
 }

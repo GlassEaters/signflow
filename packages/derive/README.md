@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Derive](#derive)
+  - [Why](#why)
+    - [Caveats](#caveats)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Derive
 A simple tool to make Solana Wallet UX better. This tool allows you to derive a new Secret Key from a web wallet.
 The web wallet signs a message with its Secret Key and uses that as the "initialization vector/seed" for a new Solana Keypair.

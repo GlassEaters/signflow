@@ -1,4 +1,4 @@
-import {WalletAdapter} from "@solana/wallet-adapter-base";
+import {Adapter} from "@solana/wallet-adapter-base";
 import {Keypair} from "@solana/web3.js";
 import {Buffer}from "buffer";
 import {sha3_512} from "js-sha3";
@@ -15,8 +15,9 @@ import {sha3_512} from "js-sha3";
  *
  * @beta
  */
-export async function deriveSigner(message: string, walletAdapter: WalletAdapter, opts: DerivedSignerOpts): Promise<Keypair> {
-    const signature = await (walletAdapter.adapter as any).signMessage(
+export async function deriveSigner(message: string, walletAdapter: Adapter, opts: DerivedSignerOpts): Promise<Keypair> {
+    // @ts-ignore
+    const signature = await walletAdapter.signMessage(
         Buffer.from(message),
     );
     const hash = sha3_512.arrayBuffer(signature);
