@@ -4,10 +4,10 @@
   "workspaces": [
     "packages/*"
   ],
-  "author": "Metaplex Maintainers <contact@metaplex.com>",
-  "homepage": "https://metaplex.com",
+  "author": "Glass Easters ",
+  "homepage": "nope",
   "repository": {
-    "url": "https://github.com/metaplex-foundation/sign-flow.git"
+    "url": "https://github.com/GlassEaters/signflow"
   },
   "private": true
 }
