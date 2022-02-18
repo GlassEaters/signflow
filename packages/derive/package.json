@@ -1,5 +1,7 @@
 {
   "name": "derive",
+  "version": "0.0.1",
+  "description": "A simple package to derive recoverable Keypairs from a web wallet",
   "packageManager": "yarn@3.2.0-rc.15",
   "scripts": {
     "check:publish-ready": "yarn build && yarn test",

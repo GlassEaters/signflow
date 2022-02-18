@@ -18,7 +18,7 @@ import {sha3_512} from "js-sha3";
 export async function deriveSigner(message: string, walletAdapter: Adapter, opts: DerivedSignerOpts): Promise<Keypair> {
     // @ts-ignore
     const signature = await walletAdapter.signMessage(
-        Buffer.from(message),
+        Buffer.from(message + opts.separateDomain ? window.origin:""),
     );
     const hash = sha3_512.arrayBuffer(signature);
     const digest = Buffer.from(hash.slice(0, 32));
@@ -30,10 +30,6 @@ export async function deriveSigner(message: string, walletAdapter: Adapter, opts
  * Options for creating a new Derived Keypair
  */
 type DerivedSignerOpts = {
-    /**
-     * Adds a random seed to the message to prevent reuse. Only use this if you know what you are doing.
-     */
-    ephemeral?: boolean;
     /**
      * Adds the current web origin to the message to prevent accidental environment confusion.
      */
