@@ -1,9 +1,10 @@
 {
   "name": "@glasseaters/derive",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple package to derive recoverable Keypairs from a web wallet",
   "packageManager": "yarn@3.2.0-rc.15",
   "license": "Apache-2.0",
+  "repository": "https://github.com/GlassEaters/signflow",
   "scripts": {
     "postversion": "git add package.json && git commit -m \"chore: update $npm_package_name to v$npm_package_version\" && git tag $npm_package_name@$npm_package_version",
     "postpublish": "git push origin && git push origin --tags",
