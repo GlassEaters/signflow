@@ -1,0 +1,13 @@
+{
+  "name": "signflow",
+  "packageManager": "yarn@3.2.0-rc.15",
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": "Metaplex Maintainers <contact@metaplex.com>",
+  "homepage": "https://metaplex.com",
+  "repository": {
+    "url": "https://github.com/metaplex-foundation/sign-flow.git"
+  },
+  "private": true
+}

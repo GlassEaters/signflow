@@ -1,0 +1,12 @@
+{
+  "name": "derive",
+  "packageManager": "yarn@3.2.0-rc.15",
+  "dependencies": {
+    "@solana/wallet-adapter-base": "^0.9.3",
+    "@solana/wallet-adapter-wallets": "^0.15.4",
+    "@solana/web3.js": "^1.35.0",
+    "bs58": "^5.0.0",
+    "buffer": "^6.0.3",
+    "js-sha3": "^0.8.0"
+  }
+}
