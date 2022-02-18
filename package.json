@@ -1,5 +1,5 @@
 {
-  "name": "signflow",
+  "name": "@glasseaters/signflow",
   "packageManager": "yarn@3.2.0-rc.15",
   "workspaces": [
     "packages/*"
